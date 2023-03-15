@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Overlock', cursive;
 }
 
 :root{
@@ -36,7 +36,6 @@ h6{
 
 p{
     font-size: 16px;
-    color: #465b52;
     margin: 15px 0 20px 0;
 }
 
@@ -84,7 +83,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 80px;
-    background: #E3E6F3;
+    background: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
@@ -94,7 +93,7 @@ body{
 
 #header img{
     width: 100%;
-    height: 100px;
+    height: 70px;
 }
 
 #navbar{
@@ -111,7 +110,7 @@ body{
 
 #navbar li a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: #1a1a1a;
     font-weight: 600;
     transition: 0.3s ease;
@@ -145,9 +144,9 @@ body{
 /* HERO PART */
 
 #hero{
-    background-image: url("../images/meubles/meubles\ \(3\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/meubles/meubles\ \(3\).jpg");
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
@@ -163,6 +162,10 @@ body{
 
 #hero h1{
     color: var(--jlred);
+}
+
+#hero p{
+    font-size: 20px;
 }
 
 #hero button{
@@ -264,7 +267,7 @@ body{
 #product1 .pro img{
     width: 100%;
     border-radius: 20px;
-    height: 300px;
+    height: 220px;
 }
 
 #product1 .pro .des{
@@ -356,7 +359,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(../images/MEUBLES/meubles\ \(3\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/MEUBLES/meubles\ \(3\).jpg);
     min-width: 670px;
     height: 50vh;
     background-size: cover;
@@ -365,7 +368,7 @@ body{
 }
 
 #sm-banner .banner-box2{
-    background-image: url(../images/SANITAIRE/sanitaire\ \(5\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/SANITAIRE/sanitaire\ \(5\).jpg);
 }
 
 #sm-banner h4{
@@ -406,7 +409,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(../images/MEUBLES/fauteuil\ \(5\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/MEUBLES/fauteuil\ \(5\).jpg);
+    position: relative;
+    opacity: 0.7;
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -416,22 +421,24 @@ body{
 }
 
 #banner3 .banner-box2{
-    background-image: url(../images/USTENSILE/vaisselle\ \(3\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/USTENSILE/vaisselle\ \(3\).jpg);
+    position: relative;
+    opacity: 0.7;
 }
 
 #banner3 .banner-box3{
-    background-image: url(../images/SANITAIRE/bain\ \(1\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/SANITAIRE/bain\ \(1\).jpg);
 }
 
 #banner3 h2{
     color: #fff;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 22px;
 }
 
 #banner3 h3{
     color: var(--jlred);
-    font-weight: 800;
+    font-weight: 900;
     font-size: 18px;
 }
 
@@ -555,6 +562,132 @@ footer .copyright{
     width: 100%;
 }
 
+
+/***************** SHOP PART *****************/
+
+#page-header{
+    background-image: url(../images/BANNER/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+
+/* PAGINATION */
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--jlred);
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* SINGLE PRODUCT */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#MainImg{
+    width: 100%;
+    height: 500px;
+}
+
+#prodetails .single-pro-image .small-image{
+    width: 100%;
+    height: 150px;
+}
+
+.small-image-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-image-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background-color: var(--jlred);
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERY PART */
 
 @media only screen and (max-width: 799px){
@@ -581,6 +714,15 @@ footer .copyright{
     }
     #navbar li{
         margin-bottom: 25px;
+    }
+    #hero h2{
+        font-size: 30px;
+    }
+    #hero h1{
+        font-size: 35px;
+    }
+    #hero p{
+        font-size: 20px;
     }
     #mobile{
         display: flex;
@@ -687,5 +829,16 @@ footer .copyright{
     }
     footer .copyright{
         text-align: start;
+    }
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 50px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
     }
 }
