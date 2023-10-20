@@ -8,8 +8,8 @@
 }
 
 :root{
-    --jlred: #ed2433;
-    --jljaune: #f4db00;
+    --jlred: #d82129;
+    --jljaune: #f0ab3a;
 }
 
 h1{
@@ -85,6 +85,33 @@ body{
     opacity: 1;
     transform: translateX(0);
     transition: 3s cubic-bezier(.5, 0, 0, 1);
+}
+
+/* SCROLL UP */
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--jlred);
+    display: inline-flex;
+    padding: 15px;
+    font-size: 1.25rem;
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s, background-color .4s;
+}
+
+.scrollup i{
+    color: #fff;
+}
+
+.scrollup:hover{
+    transform: translateY(-.5rem);
+}
+
+/* SHOW SCROLL UP */
+.show-scroll{
+    bottom: 3rem;
 }
 
 /* PRELOADER */
@@ -200,6 +227,11 @@ iframe{
     color: #fff;
 }
 
+#hero p span{
+    color: var(--jljaune);
+    text-transform: uppercase;
+}
+
 #hero h2{
     color: #fff;
 }
@@ -211,6 +243,7 @@ iframe{
     border-radius: 50px;
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* FEATURE PART */
@@ -312,8 +345,9 @@ iframe{
 }
 
 #product1 .pro .des span{
-    color: #606063;
-    font-size: 12px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 #product1 .pro .des h5{
@@ -332,6 +366,10 @@ iframe{
     color: var(--jlred);
     font-size: 15px;
     font-weight: 700;
+}
+
+#product1 .pro .des a{
+    color: var(--jlred);
 }
 
 #product1 .pro .cart{
@@ -373,13 +411,18 @@ iframe{
     padding: 10px 0;
 }
 
+#banner a{
+    color: var(--jlred);
+    text-decoration: none;
+}
+
 #banner h2 span{
     color: var(--jlred);
 }
 
 #banner button:hover{
-    color: #fff;
-    background-color: var(--jlred);
+    color: var(--jlred);
+    background-color: #fff;
 }
 
 /* ANOTHER BANNER */
@@ -404,7 +447,7 @@ iframe{
 }
 
 #sm-banner .banner-box2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/SANITAIRE/sanitaire\ \(5\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/USTENSILE/vaisselle\ \(2\).jpg);
 }
 
 #sm-banner h4{
@@ -1040,6 +1083,15 @@ footer .copyright{
     padding: 10px;
     font-size: 15px;
 }
+
+
+/* POLITIQUE */
+
+#pot h1{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
 
 
 /* MEDIA QUERY PART */
